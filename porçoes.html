@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Porções & Petiscos</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 20px; }
+        h1 { color: #d62828; }
+        .item { margin-bottom: 15px; }
+        .nome { font-weight: bold; color: #333; }
+        .preco { float: right; color: #d62828; font-weight: bold; }
+        .descricao { margin-top: 3px; color: #555; }
+        hr { border: none; border-top: 1px solid #eee; margin: 10px 0; }
+      
+    </style>
+    
+</head>
+<body>
+
+<h1> Porções & Petiscos</h1>
+<a href="index.html" class="btn-voltar">⬅ Voltar</a>
+
+<div class="item">
+    <span class="nome">Fritas Kids</span><span class="preco">R$ 16,00</span>
+    <div class="descricao">Batatas fritas com queijo e orégano (porção infantil).</div>
+    <button onclick="adicionarCarrinho('Fritas Kids', 16)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Fritas P (Serve 2 pessoas)</span><span class="preco">R$ 26,00</span>
+    <div class="descricao">Batatas fritas com queijo e orégano.</div>
+    <button onclick="adicionarCarrinho('Fritas P', 26)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Fritas M</span><span class="preco">R$ 36,00</span>
+    <div class="descricao">Batatas fritas média com queijo e orégano.</div>
+    <button onclick="adicionarCarrinho('Fritas M', 36)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Fritas G</span><span class="preco">R$ 48,00</span>
+    <div class="descricao">Batatas fritas grande com queijo e orégano.</div>
+    <button onclick="adicionarCarrinho('Fritas G', 48)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Fritas Entreveiro M (2 pessoas)</span><span class="preco">R$ 77,00</span>
+    <div class="descricao">Batatas fritas, coração, calabresa, iscas de frango com queijo e orégano.</div>
+    <button onclick="adicionarCarrinho('Fritas Entreveiro M', 77)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Fritas Entreveiro G (4 pessoas)</span><span class="preco">R$ 92,00</span>
+    <div class="descricao">Batatas fritas, coração, calabresa, iscas de frango com queijo e orégano.</div>
+    <button onclick="adicionarCarrinho('Fritas Entreveiro G', 92)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Violinha M</span><span class="preco">R$ 74,00</span>
+    <div class="descricao">Iscas de violinha à milanesa, azeitona verde e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Violinha M', 74)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Violinha G</span><span class="preco">R$ 92,00</span>
+    <div class="descricao">Iscas de violinha à milanesa, azeitona verde e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Violinha G', 92)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Polenta Frita P</span><span class="preco">R$ 30,00</span>
+    <div class="descricao">Polenta frita com queijo ralado e orégano (pequena).</div>
+    <button onclick="adicionarCarrinho('Polenta Frita P', 30)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Polenta Frita M</span><span class="preco">R$ 40,00</span>
+    <div class="descricao">Polenta frita com queijo ralado e orégano (média).</div>
+    <button onclick="adicionarCarrinho('Polenta Frita M', 40)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Anéis de Cebola</span><span class="preco">R$ 38,00</span>
+    <div class="descricao">Anéis de cebola à milanesa, queijo ralado e orégano.</div>
+    <button onclick="adicionarCarrinho('Anéis de Cebola', 38)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Porção de Frios</span><span class="preco">R$ 35,00</span>
+    <div class="descricao">Queijo, presunto, salame, azeitona e ovo de codorna.</div>
+    <button onclick="adicionarCarrinho('Porção de Frios', 35)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Picadão M (2 pessoas)</span><span class="preco">R$ 95,00</span>
+    <div class="descricao">Batatas fritas, iscas de carne, iscas de frango, calabresa, queijo, azeitona, ovo de codorna e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Picadão M', 95)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Picadão G (4 pessoas)</span><span class="preco">R$ 115,00</span>
+    <div class="descricao">Batatas fritas, coração, presunto, azeitona, ovo de codorna e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Picadão G', 115)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Tábua de Carnes M (2 pessoas)</span><span class="preco">R$ 82,00</span>
+    <div class="descricao">Iscas de carne, frango, coração, calabresa, farofa e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Tábua de Carnes M', 82)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Tábua de Carnes G (4 pessoas)</span><span class="preco">R$ 102,00</span>
+    <div class="descricao">Iscas de carne, frango, coração, calabresa, farofa e maionese caseira.</div>
+    <button onclick="adicionarCarrinho('Tábua de Carnes G', 102)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Porção de Carnes P (2 pessoas)</span><span class="preco">R$ 48,00</span>
+    <div class="descricao">Porção de carnes variadas com farofa.</div>
+    <button onclick="adicionarCarrinho('Porção de Carnes P', 48)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Porção de Coração P (2 pessoas)</span><span class="preco">R$ 48,00</span>
+    <div class="descricao">Porção de coração frito e farofa.</div>
+    <button onclick="adicionarCarrinho('Porção de Coração P', 48)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Porção de Frango P (2 pessoas)</span><span class="preco">R$ 44,00</span>
+    <div class="descricao">Porção de iscas de frango e farofa.</div>
+    <button onclick="adicionarCarrinho('Porção de Frango P', 44)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Frango à Milanesa c/ Fritas M</span><span class="preco">R$ 70,00</span>
+    <div class="descricao">Iscas de frango à milanesa com batata frita e queijo.</div>
+    <button onclick="adicionarCarrinho('Frango à Milanesa c/ Fritas M', 70)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Frango à Milanesa c/ Fritas G</span><span class="preco">R$ 85,00</span>
+    <div class="descricao">Iscas de frango à milanesa com batata frita e queijo (grande).</div>
+    <button onclick="adicionarCarrinho('Frango à Milanesa c/ Fritas G', 85)">Adicionar</button>
+</div>
+
+</body>
+</html>

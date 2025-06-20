@@ -1,0 +1,304 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Paleta de cores */
+:root {
+  --vermelho: #d62828;
+  --amarelo: #fcbf49;
+  --branco: #ffffff;
+  --cinza-claro: #f5f5f5;
+  --preto: #333333;
+}
+
+/* Corpo */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cinza-claro);
+  color: var(--preto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--vermelho);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--branco);
+}
+
+header .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: var(--branco);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+  color: var(--amarelo);
+}
+
+/* Conteúdo Principal */
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background-color: var(--branco);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+  margin-bottom: 20px;
+  color: var(--vermelho);
+  font-size: 2rem;
+  border-bottom: 2px solid var(--amarelo);
+  padding-bottom: 10px;
+}
+
+main h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: var(--vermelho);
+}
+
+/* Carrinho */
+#carrinho {
+  background-color: var(--cinza-claro);
+  border: 1px solid var(--vermelho);
+  padding: 20px;
+  border-radius: 8px;
+  min-height: 100px;
+  overflow-x: auto;
+}
+
+#carrinho table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#carrinho th,
+#carrinho td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+#carrinho th {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  font-weight: 600;
+}
+
+#carrinho td {
+  color: var(--preto);
+}
+
+/* Espaçamento entre colunas */
+#carrinho th:nth-child(2),
+#carrinho td:nth-child(2) {
+  min-width: 100px;
+}
+
+#carrinho th:nth-child(3),
+#carrinho td:nth-child(3) {
+  min-width: 80px;
+}
+
+#carrinho th:nth-child(4),
+#carrinho td:nth-child(4) {
+  min-width: 100px;
+}
+
+/* Botão Remover */
+.btn-remover {
+  background-color: transparent;
+  color: var(--vermelho);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.btn-remover:hover {
+  color: var(--amarelo);
+  transform: scale(1.2);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  border: 1px solid var(--vermelho);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+textarea:focus {
+  border-color: var(--amarelo);
+  outline: none;
+}
+
+/* Botões principais */
+button {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 5px 0 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  background-color: var(--amarelo);
+  color: var(--preto);
+}
+
+/* Botões do carrinho - Finalizar e Limpar */
+.botoes-carrinho {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botoes-carrinho button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#btnFinalizar {
+  background-color: #c82333; /* Verde sucesso */
+  color: white;
+}
+
+#btnFinalizar:hover {
+  background-color: #c82333;
+}
+
+#btnLimpar {
+  background-color: #dc3545; /* Vermelho alerta */
+  color: white;
+}
+
+#btnLimpar:hover {
+  background-color: #c82333;
+}
+
+/* Rodapé */
+footer {
+  background-color: var(--vermelho);
+  color: var(--branco);
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+}
+
+/* Estilos para os campos de cadastro (Passo 4) */
+#nome,
+#telefone,
+#email {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 12px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  border: 2px solid var(--vermelho);
+  border-radius: 10px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#nome:focus,
+#telefone:focus,
+#email:focus {
+  border-color: var(--amarelo);
+  box-shadow: 0 0 8px var(--amarelo);
+  outline: none;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+  .botoes-carrinho {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botoes-carrinho button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#btnFinalizar {
+  background-color: #c82333; /* Verde sucesso */
+  color: white;
+}
+
+#btnFinalizar:hover {
+  background-color: #218838;
+}
+
+#btnLimpar {
+  background-color: #dc3545; /* Vermelho alerta */
+  color: white;
+}
+
+#btnLimpar:hover {
+  background-color: #c82333;
+}
+
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title> Bebidas</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 20px; }
+        h1 { color: #d62828; }
+        .item { margin-bottom: 15px; }
+        .nome { font-weight: bold; color: #333; }
+        .preco { float: right; color: #d62828; font-weight: bold; }
+        .descricao { margin-top: 3px; color: #555; }
+        hr { border: none; border-top: 1px solid #eee; margin: 10px 0; }
+    </style>
+</head>
+<body>
+
+<h1> Bebidas</h1>
+<a href="index.html" class="btn-voltar">⬅ Voltar</a>
+
+<div class="item">
+    <span class="nome">Água (com ou sem gás)</span><span class="preco">R$ 5,00</span>
+    <button onclick="adicionarCarrinho('Água (com ou sem gás)', 5.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Coca KS 290ml</span><span class="preco">R$ 5,00</span>
+    <button onclick="adicionarCarrinho('Coca KS 290ml', 5.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Lata Fruki</span><span class="preco">R$ 5,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Lata Fruki', 5.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Lata</span><span class="preco">R$ 6,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Lata', 6.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Fruki 600ml</span><span class="preco">R$ 9,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Fruki 600ml', 9.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante 600ml</span><span class="preco">R$ 10,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante 600ml', 10.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Fruki 1,5L</span><span class="preco">R$ 12,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Fruki 1,5L', 12.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Coca 1L</span><span class="preco">R$ 11,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Coca 1L', 11.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Coca 1,5L</span><span class="preco">R$ 13,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Coca 1,5L', 13.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante Fruki 2L</span><span class="preco">R$ 13,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante Fruki 2L', 13.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Refrigerante 2L</span><span class="preco">R$ 15,00</span>
+    <button onclick="adicionarCarrinho('Refrigerante 2L', 15.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Sprite Lemon Fresh 510ml</span><span class="preco">R$ 9,00</span>
+    <button onclick="adicionarCarrinho('Sprite Lemon Fresh 510ml', 9.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Suco Del Valle (Laranja ou Uva) 450ml</span><span class="preco">R$ 8,00</span>
+    <button onclick="adicionarCarrinho('Suco Del Valle (Laranja ou Uva) 450ml', 8.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Suco de Laranja Natural 300ml</span><span class="preco">R$ 8,00</span>
+    <button onclick="adicionarCarrinho('Suco de Laranja Natural 300ml', 8.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Schweppes Tônica / Citrus</span><span class="preco">R$ 6,00</span>
+    <button onclick="adicionarCarrinho('Schweppes Tônica / Citrus', 6.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Ice Tea Pêssego 450ml</span><span class="preco">R$ 8,00</span>
+    <button onclick="adicionarCarrinho('Ice Tea Pêssego 450ml', 8.00)">Adicionar</button>
+</div><hr>
+
+<div class="item">
+    <span class="nome">Energético TNT Latão</span><span class="preco">R$ 14,00</span>
+    <button onclick="adicionarCarrinho('Energético TNT Latão', 14.00)">Adicionar</button>
+</div><hr>
+
+<h2>🍺 Cervejas Lata</h2>
+
+<div class="item"><span class="nome">Skol</span><span class="preco">R$ 9,00</span>
+<button onclick="adicionarCarrinho('Skol', 9.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Polar</span><span class="preco">R$ 9,00</span>
+<button onclick="adicionarCarrinho('Polar', 9.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Amstel</span><span class="preco">R$ 10,00</span>
+<button onclick="adicionarCarrinho('Amstel', 10.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Budweiser</span><span class="preco">R$ 10,00</span>
+<button onclick="adicionarCarrinho('Budweiser', 10.00)">Adicionar</button>
+</div><hr>
+
+<h2>🍻 Cervejas Long Neck</h2>
+
+<div class="item"><span class="nome">Budweiser</span><span class="preco">R$ 10,00</span>
+<button onclick="adicionarCarrinho('Budweiser Long Neck', 10.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Malzebier</span><span class="preco">R$ 10,00</span>
+<button onclick="adicionarCarrinho('Malzebier', 10.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Heineken</span><span class="preco">R$ 12,00</span>
+<button onclick="adicionarCarrinho('Heineken Long Neck', 12.00)">Adicionar</button>
+</div><hr>
+
+<h2>🍺 Cervejas 600ml</h2>
+
+<div class="item"><span class="nome">Petra</span><span class="preco">R$ 13,00</span>
+<button onclick="adicionarCarrinho('Petra 600ml', 13.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Amstel</span><span class="preco">R$ 14,00</span>
+<button onclick="adicionarCarrinho('Amstel 600ml', 14.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Antártica Original</span><span class="preco">R$ 16,00</span>
+<button onclick="adicionarCarrinho('Antártica Original 600ml', 16.00)">Adicionar</button>
+</div><hr>
+
+<div class="item"><span class="nome">Heineken</span><span class="preco">R$ 18,00</span>
+<button onclick="adicionarCarrinho('Heineken 600ml', 18.00)">Adicionar</button>
+</div>
+
+</body>
+</html>

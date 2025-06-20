@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lanches</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 20px; }
+        h1 { color: #d62828; }
+        .item { margin-bottom: 15px; }
+        .nome { font-weight: bold; color: #333; }
+        .preco { float: right; color: #d62828; font-weight: bold; }
+        .descricao { margin-top: 3px; color: #555; }
+        hr { border: none; border-top: 1px solid #eee; margin: 10px 0; }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>Lanches</h1>
+    <a href="index.html" class="btn-voltar">⬅ Voltar</a>
+    <div class="item">
+        <span class="nome">Xis Salada</span><span class="preco">R$ 28,00</span>
+        <div class="descricao">Hambúrguer, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Salada', 28)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Vegetariano</span><span class="preco">R$ 25,00</span>
+        <div class="descricao">Palmito, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Vegetariano', 25)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Acebolado</span><span class="preco">R$ 30,00</span>
+        <div class="descricao">Hambúrguer acebolado na chapa, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Acebolado', 30)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Frango</span><span class="preco">R$ 27,00</span>
+        <div class="descricao">Iscas de frango, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Frango', 27)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Calabresa</span><span class="preco">R$ 33,00</span>
+        <div class="descricao">Calabresa, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Calabresa', 33)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Fricassê</span><span class="preco">R$ 31,00</span>
+        <div class="descricao">Fricassê de frango, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Fricassê', 31)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Bacon</span><span class="preco">R$ 34,00</span>
+        <div class="descricao">Hambúrguer, bacon, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Bacon', 34)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Strogonoff</span><span class="preco">R$ 35,00</span>
+        <div class="descricao">Strogonoff de carne, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Strogonoff', 35)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Atum</span><span class="preco">R$ 32,00</span>
+        <div class="descricao">Atum, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Atum', 32)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Coração</span><span class="preco">R$ 37,00</span>
+        <div class="descricao">Coração, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Coração', 37)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Especial</span><span class="preco">R$ 35,00</span>
+        <div class="descricao">Iscas de carne, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Especial', 35)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Center (Cobertura de queijo e fritas)</span><span class="preco">R$ 37,00</span>
+        <div class="descricao">Hambúrguer, calabresa, bacon, queijo, ovo, alface, tomate, milho, ervilha, maionese + cobertura de queijo e fritas.</div>
+        <button onclick="adicionarCarrinho('Xis Center', 37)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Misto</span><span class="preco">R$ 41,00</span>
+        <div class="descricao">Hambúrguer, calabresa, bacon, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Misto', 41)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Picanha</span><span class="preco">R$ 41,00</span>
+        <div class="descricao">Picanha, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Picanha', 41)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Xis Filé</span><span class="preco">R$ 40,00</span>
+        <div class="descricao">Filé, queijo, ovo, alface, tomate, milho, ervilha e maionese.</div>
+        <button onclick="adicionarCarrinho('Xis Filé', 40)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Bauru Frango com Fritas</span><span class="preco">R$ 39,00</span>
+        <div class="descricao">Filé de peito, queijo, ovo, alface, tomate, milho, presunto, ervilha, molho barbecue, fritas e maionese.</div>
+        <button onclick="adicionarCarrinho('Bauru Frango com Fritas', 39)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Bauru Filé com Fritas</span><span class="preco">R$ 42,00</span>
+        <div class="descricao">Filé, queijo, ovo, alface, tomate, milho, presunto, ervilha, molho barbecue, fritas e maionese.</div>
+        <button onclick="adicionarCarrinho('Bauru Filé com Fritas', 42)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Bacon</span><span class="preco">R$ 24,00</span>
+        <div class="descricao">Bacon, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Bacon', 24)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Calabresa</span><span class="preco">R$ 24,00</span>
+        <div class="descricao">Calabresa, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Calabresa', 24)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Pastor</span><span class="preco">R$ 23,00</span>
+        <div class="descricao">Duas salsichas, queijo mussarela, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Pastor', 23)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Frango</span><span class="preco">R$ 23,00</span>
+        <div class="descricao">Frango, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Frango', 23)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Coração</span><span class="preco">R$ 26,00</span>
+        <div class="descricao">Coração, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Coração', 26)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Linguiça</span><span class="preco">R$ 24,00</span>
+        <div class="descricao">Linguiça, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Linguiça', 24)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Dog Salsicha</span><span class="preco">R$ 20,00</span>
+        <div class="descricao">Salsicha, alface, tomate, milho, ervilha, maionese e molho.</div>
+        <button onclick="adicionarCarrinho('Dog Salsicha', 20)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Torrada Simples</span><span class="preco">R$ 13,00</span>
+        <div class="descricao">Pão de forma, presunto, queijo e maionese.</div>
+        <button onclick="adicionarCarrinho('Torrada Simples', 13)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">Torrada Especial</span><span class="preco">R$ 17,00</span>
+        <div class="descricao">Pão de forma, presunto, queijo, ovo, tomate, alface e maionese.</div>
+        <button onclick="adicionarCarrinho('Torrada Especial', 17)">Adicionar</button>
+    </div><hr>
+
+</body>
+</html>

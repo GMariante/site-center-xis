@@ -1,0 +1,154 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de Cores Atualizada */
+:root {
+    --vermelho: #d62828;
+    --amarelo: #fcbf49;
+    --branco: #ffffff;
+    --cinza-claro: #f5f5f5;
+    --preto: #333333;
+}
+
+body {
+    background-color: var(--cinza-claro);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    padding: 20px;
+    color: var(--preto);
+}
+
+/* Título */
+h1 {
+    color: var(--vermelho);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Cardápio */
+.item {
+    background-color: var(--branco);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    margin-bottom: 16px;
+    transition: transform 0.2s ease;
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+.nome {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--preto);
+    display: block;
+}
+
+.preco {
+    color: var(--vermelho);
+    font-weight: bold;
+    font-size: 18px;
+    float: right;
+}
+
+.descricao {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Botões */
+button {
+    background-color: #fcbf49;
+    color: var(--preto);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+button:hover {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    transform: translateY(-2px);
+}
+
+/* Estilo específico para o botão Voltar */
+.btn-voltar {
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: absolute; /* para posicionar do lado do título */
+    top: 20px;
+    left: 20px;
+}
+
+.btn-voltar:hover {
+    background-color: #b22222; /* tom mais escuro de vermelho */
+    transform: scale(1.05);
+}
+
+.btn-voltar:active {
+    transform: scale(0.97);
+}
+
+/* Separadores */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .nome {
+        font-size: 16px;
+    }
+
+    .preco {
+        font-size: 16px;
+    }
+
+    .descricao {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+
+    .btn-voltar {
+        top: 15px;
+        left: 15px;
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cardápio - Almoço e Janta</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script.js" defer></script>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #fff8f0; margin: 20px; }
+        h1 { color: #d62828; }
+        .item { margin-bottom: 15px; }
+        .nome { font-weight: bold; color: #333; }
+        .preco { float: right; color: #d62828; font-weight: bold; }
+        .descricao { margin-top: 3px; color: #555; }
+        hr { border: none; border-top: 1px solid #eee; margin: 10px 0; }
+        .btn-voltar {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 6px 12px;
+            background-color: #d62828;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .btn-voltar:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Almoço e Jantar - À La Minuta</h1>
+    <a href="index.html" class="btn-voltar">⬅ Voltar</a>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Carne</span><span class="preco">R$ 29,00</span>
+        <div class="descricao">Bife, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Carne', 29.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Carne Acebolada</span><span class="preco">R$ 31,00</span>
+        <div class="descricao">Bife acebolado, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Carne Acebolada', 31.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Carne à Milanesa</span><span class="preco">R$ 33,00</span>
+        <div class="descricao">Bife à milanesa, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Carne à Milanesa', 33.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Carne à Parmegiana</span><span class="preco">R$ 37,00</span>
+        <div class="descricao">Bife à parmegiana, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Carne à Parmegiana', 37.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Frango</span><span class="preco">R$ 26,00</span>
+        <div class="descricao">Filé de frango, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Frango', 26.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Frango Acebolado</span><span class="preco">R$ 29,00</span>
+        <div class="descricao">Filé de frango acebolado, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Frango Acebolado', 29.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Frango à Milanesa</span><span class="preco">R$ 31,00</span>
+        <div class="descricao">Filé de frango à milanesa, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Frango à Milanesa', 31.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Frango à Parmegiana</span><span class="preco">R$ 35,00</span>
+        <div class="descricao">Filé de frango à parmegiana, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Frango à Parmegiana', 35.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Peixe à Milanesa</span><span class="preco">R$ 36,00</span>
+        <div class="descricao">Filé de peixe à milanesa, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Peixe à Milanesa', 36.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Coração</span><span class="preco">R$ 35,00</span>
+        <div class="descricao">Coração de frango, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Coração', 35.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Strogonoff</span><span class="preco">R$ 35,00</span>
+        <div class="descricao">Strogonoff, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Strogonoff', 35.00)">Adicionar</button>
+    </div><hr>
+
+    <div class="item">
+        <span class="nome">À La Minuta de Fricassê</span><span class="preco">R$ 34,00</span>
+        <div class="descricao">Fricassê, arroz, feijão, ovo, batata frita e salada.</div>
+        <button onclick="adicionarCarrinho('À La Minuta de Fricassê', 34.00)">Adicionar</button>
+    </div>
+
+</body>
+</html>
